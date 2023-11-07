@@ -22,7 +22,7 @@ def get_posts():
 
 @app.post("/createposts")
 def create_posts(newpost: Post):
-    print(newpost.title)
+    print(newpost.published)
     return {"data": "newpost"}
 
 
